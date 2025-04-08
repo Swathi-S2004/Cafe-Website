@@ -1,0 +1,265 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+.main-container{
+    max-width:  100%;
+    box-sizing: border-box;
+}
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/castle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content{
+    height: 100vh;
+    width: 100%;
+    background-color: #3820006b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.5rem;
+}
+.hero-content h1{
+    font-size: 5rem;
+}
+.hero-content p{
+    font-size: 2.7rem;
+}
+.hero-btn{
+    text-decoration: none;
+    color: white;
+    background-color: #c90627;
+    padding: 25px 15px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hero-btn:hover{
+    background-color: #b30220;
+    padding: 30px 20px;
+    font-size: 1.7rem;
+}
+.hero-nav{
+    background-color: rgba(0,0,0,0.3);
+    padding: 30px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.nav-logo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.logo-name{
+    list-style-type: none;
+    font-size: 2.5rem;
+    color: #ff6a00;
+    font-weight: bold;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+}
+.navbar a{
+    list-style-type: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    font-size: 1.5rem;
+}
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.about-section{
+    padding: 4rem 2rem;
+    display: flex;
+    background-color: #ac6509;
+}
+.about-image{
+    width: 50%;
+    padding: 50px;
+}
+.about-image img{
+    width: 100%;
+    height: 550px;
+    border: 2px solid rgb(255, 251, 243);
+}
+.about-content{
+    width: 50%;
+    padding: 70px;
+}
+.about-content h1{
+    font-size: 2.8rem;
+    text-decoration: underline;
+}
+.about-content p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+.menu-section{
+    background-color: #ac6509;
+    padding: 3rem 2rem;
+}
+.menu-section h1{
+    font-size: 3rem;
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.menu-item-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-item{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.menu-item:hover{
+    width: 30%;
+}
+.menu-item h2{
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+.menu-item p{
+    font-size: 1.3rem;
+}
+.menu-item span{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.gallary-section{
+    width: 100%;
+    height: 850px;
+    background-color: #ac6509;
+    padding-top: 10px;
+}
+.gallary-section h1{
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+.gallary-row{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+    padding: 9px;
+    margin-right: 3px;
+}
+.gallary-row img{
+    width: 100%;
+    height: 300px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+}
+.gallary-row img:hover{
+    width: 102%;
+    height: 310px;
+    opacity: 0.5;
+}
+.contact-section{
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: url(./images/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.contact-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #382000a4;
+    z-index: 0;
+}
+.contact-section *{
+    position: relative;
+    z-index: 1;
+}
+.contact-section h1{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.contact-section p{
+    font-size: 1.3rem;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem; 
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.contact-form input, .contact-form textarea{
+    width: 80%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    display: block;
+    font-size: 1.3rem;
+}
+.contact-form button{
+    padding: 1.2rem 2rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #1b4188;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.contact-info strong{
+    font-size: 1.5rem;
+}
+.contact-info p{
+    font-size: 1.5rem;
+}

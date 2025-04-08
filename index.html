@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASTLE CAFE</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="hero-section">
+            <div class="hero-nav">
+                <nav class="navbar">
+                    <div class="nav-logo">
+                        <li class="logo-name">Castle Cafe</li>
+                    </div>
+                    <div class="nav-items">
+                        <a href="#home">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about">
+                            <li>About</li>
+                        </a>
+                        <a href="#menu">
+                            <li>Menu</li>
+                        </a>
+                        <a href="#gallary">
+                            <li>Gallery</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact</li>
+                        </a>
+                    </div>
+                </nav>
+                <div class="hamburger">&#9776;</div>
+            </div>
+            <div class="hero-content" id="home">
+                <h1>Castle Cafe</h1>
+                <p>Where royal flavors meet cozy moments</p>
+                <a href="#menu" class="hero-btn">Explore Menu</a>
+            </div>
+        </div>
+
+        <div class="about-section" id="about">
+            <div class="about-image">
+                <img src="./images/capacino.png" alt="Capacino">
+            </div>
+            <div class="about-content">
+                <h1>Welcome to Castle Cafe</h1>
+                <p>At Castle Cafe, we believe every cup of coffee should feel like a royal experience.
+                    Inspired by timeless castle elegance and warm hospitality, our cafe is a cozy
+                    escape where tradition blends with modern taste. Whether you're here for a
+                    quiet moment, a chat with friends, or to work on your dreams, Castle Cafe offers
+                    an ambiance that feels both luxurious and comforting. Step into a world where
+                    the aroma of freshly brewed coffee meets the charm of castle walls -- your fairytale cafe awaits.
+                </p>
+            </div>
+        </div>
+
+        <div class="menu-section" id="menu">
+            <h1>Our Royal Menu</h1>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <img src="./images/menu1.jpg" alt="Hazelnut Mocha Frappe">
+                    <h2>Hazelnut Mocha Frappe</h2>
+                    <p>Rich chocolate and hazelnut blended into a creamy frappe.</p>
+                    <span>&#8377;179</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/menu2.jpg" alt="Cheesy Truffle Fries" class="menu-fries">
+                    <h2>Cheesy Truffle Fries</h2>
+                    <p>Crispy golden fries topped with rich, fluffy cheese shreds and a hint of herbs.</p>
+                    <span>&#8377;149</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/menu3.jpg" alt="Berry Bliss Waffle">
+                    <h2>Berry Bliss Waffle</h2>
+                    <p>Waffle topped with fresh berries, sugar dust and served with syrup.</p>
+                    <span>&#8377;220</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallary-section" id="gallary">
+            <h1>Our Gallery</h1>
+            <div class="gallary-row">
+                <img src="./images/food1.jpg" alt="">
+                <img src="./images/food2.jpg" alt="">
+                <img src="./images/food3.jpg" alt="">
+                <img src="./images/food4.jpg" alt="">
+                <img src="./images/food5.jpg" alt="">
+                <img src="./images/food6.jpg" alt="">
+                <img src="./images/food7.jpg" alt="">
+                <img src="./images/food8.jpg" alt="">
+                <img src="./images/food9.jpg" alt="">
+                <img src="./images/food10.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="contact-section" id="contact">
+            <div class="contact-content">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you! Whether you have a question, want to book table, or just want to say
+                    hello.</p>
+                <div class="contact-container">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <p><strong>Address:</strong> 123 Castle Street, Dream City</p>
+                        <p><strong>Phone:</strong> +91 98765 43210</p>
+                        <p><strong>Email:</strong> contact@castlecafe.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.navbar');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+@media  screen and (max-width:1200px) {
+    .hero-content h1{
+        font-size: 3.5rem;
+    }
+    .hero-content p{
+        font-size: 2rem;
+    }  
+    .hero-btn{
+        padding: 20px 10px;
+        font-size: 1.3rem;
+        transition: 0.5s;
+    }
+    .hero-btn:hover{
+        padding: 25px 15px;
+        font-size: 1.5rem;
+    }      
+    .about-content{
+        padding: 40px;
+    }
+    .about-content p{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    .menu-item-container{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+    }
+    .menu-item{
+        width: 25%;
+    }
+    .gallary-section{
+        height: 700px;
+    }
+    .gallary-row img{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 768px){
+    .hero-content{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
+    .hero-content h1{
+        font-size: 3rem;
+    }
+    .hero-content p{
+        font-size: 1.5rem;
+    }
+    .hero-btn{
+        padding: 15px 10px;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .hero-btn:hover{
+        background-color: #b30220;
+        padding: 20px 20px;
+        font-size: 1.2rem;
+    }    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }  
+    .nav-logo{
+        display: flex;
+        justify-content: center;
+    }    
+    .hero-nav{
+        background-color: rgba(0,0,0,0);
+        padding: 20px;
+    } 
+    .logo-name{
+        font-size: 2rem;
+    }      
+    .navbar a{
+        font-size: 1.1rem;
+    }     
+    .hamburger{
+        display: block;
+        position: fixed;
+        top: 0;
+    }  
+    .navbar{
+        display: none;
+    }
+    .navbar.active{
+        display: flex;
+    }
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: #ac6509;
+    }    
+    .about-image{
+        width: auto;
+        height: 600px;
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .about-image img{
+        width: 100%;
+        height: auto;
+        border: 2px solid rgb(255, 251, 243);
+    }    
+    .about-content{
+        width: auto;
+        padding: 70px;
+        text-align: center;
+    }
+    .about-content h1{
+        font-size: 3rem;
+        text-decoration: underline;
+    }
+    .about-content p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    } 
+    .menu-section{
+        padding-bottom: 50px;
+    }   
+    .menu-item-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 20px;
+    }
+    .menu-item{
+        height: auto;
+        width: 80%;
+        padding: 20px;
+    }
+    .menu-item:hover{
+        width: 85%;
+    }    
+    .menu-item h2{
+        font-size: 2rem;
+        margin: 0;
+    }
+    .menu-item p{
+        font-size: 1.4rem;
+    } 
+    .menu-item span{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }  
+    .gallary-section{
+        height: auto;
+    }    
+    .gallary-row{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .gallary-row img{
+        height: 400px;
+    }
+}
+
+@media  screen and (max-width:480px) {
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 1rem;
+        font-weight: bold;
+    }    
+    .hero-btn{
+        padding: 10px 10px;
+        font-size: 1rem;
+        border: 3px;
+        cursor: pointer;
+    }
+    .about-content h1{
+        font-size: 1.8rem;
+        text-decoration: underline;
+    }
+    .about-content p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }  
+    .menu-section h1{
+        font-size: 2rem;
+    } 
+    .menu-item-container{
+        padding: 20px;
+    } 
+    .menu-item h2{
+        font-size: 1.5rem;
+        padding-top: 0rem;
+    }
+    .menu-item p{
+        font-size: 1.2rem;
+    } 
+    .menu-item span{
+        font-size: 1rem;
+        font-weight: bold;
+    }  
+    .gallary-section{
+        height: auto;
+    }  
+    .gallary-section h1{
+        font-size: 2rem;
+    }
+    .gallary-row{
+        grid-template-columns: 1fr;
+    }
+    .contact-section h1{
+        font-size: 2rem;
+    }
+    .contact-section p{
+        font-size: 1.1rem;
+    }
+    .contact-form button{
+        font-size: 1.1rem;
+        padding: 1rem 0.5rem;
+    }
+    .contact-info strong{
+        font-size: 1.1rem;
+    }
+    .contact-info p{
+        font-size: 1.1rem;
+    }
+    .contact-form input, .contact-form textarea{
+        font-size: 1rem;
+    }    
+}
+
